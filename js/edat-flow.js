@@ -1382,7 +1382,7 @@ function edatCerrarSesion() {
 
     localStorage.removeItem(EDAT_LLAVE_SESION);
 
-    window.location.href = "login.html";
+    window.location.href = "../index.html";
 
 }
 

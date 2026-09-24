@@ -1,10 +1,10 @@
-// Acceso por perfil. Las rutas de destino son relativas a html/login.html.
+// Acceso por perfil. Las rutas de destino son relativas al index.html de la raíz.
 
 const profiles = {
 
     recruiter: {
         name: "Atracción de Talento",
-        page: "index.html"
+        page: "html/login.html"
     },
 
     hrbp: {
@@ -13,7 +13,7 @@ const profiles = {
             "HRBP",
 
         page:
-            "hrbp.html"
+            "html/hrbp.html"
 
     },
 
@@ -23,7 +23,7 @@ const profiles = {
             "Hiring Manager",
 
         page:
-            "hiring-manager.html"
+            "html/hiring-manager.html"
 
     },
 
@@ -33,7 +33,7 @@ const profiles = {
             "Candidato",
 
         page:
-            "candidato.html"
+            "html/candidato.html"
 
     }
 
