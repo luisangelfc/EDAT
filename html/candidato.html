@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        EDAT | Mi Postulación
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/candidato.css"
+    >
+
+    <script
+        src="../js/candidatos-db.js"
+        defer
+    ></script>
+
+    <script
+        src="../js/edat-flow.js"
+        defer
+    ></script>
+
+    <script
+        src="../js/candidato.js"
+        defer
+    ></script>
+</head>
+
+<body class="edat-candidate-page">
+
+    <header class="topbar">
+
+        <div class="topbar-inner">
+
+            <div class="brand-group">
+
+                <div class="puerto-brand">
+
+                    <div class="puerto-icon"><img class="talento-logo-image" src="../recursos/Logo%20EDAT.png" alt="EDAT"></div>
+
+                    <div class="puerto-copy">
+                        <strong>
+                            EDAT
+                        </strong>
+
+                        <span>
+                            LIVERHACK 2026
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <nav class="main-nav">
+
+                <button
+                    class="nav-link active"
+                    type="button"
+                >
+                    Mis Postulaciones
+                </button>
+
+                <button
+                    class="nav-link"
+                    type="button"
+                    id="messagesNav"
+                >
+                    Mensajes y Citas
+                </button>
+
+                <button
+                    class="nav-link"
+                    type="button"
+                    id="noticesNav"
+                >
+                    Notificaciones
+                    <span id="noticesBadge" hidden>0</span>
+                </button>
+
+                <button
+                    class="nav-link"
+                    type="button"
+                    id="faqNav"
+                >
+                    Ayuda y FAQs
+                </button>
+
+            </nav>
+
+            <div class="nav-user">
+
+                <div class="nav-user-copy">
+
+                    <strong id="navCandidateName">
+                        Sofía Valdés
+                    </strong>
+
+                    <span>
+                        Postulante
+                    </span>
+
+                </div>
+
+                <button class="nav-avatar" id="navAvatar" type="button" aria-label="Opciones de sesión" aria-expanded="false" aria-controls="edatAccountPanel">
+                    S
+                </button>
+
+                <div class="edat-account-panel" id="edatAccountPanel" hidden><button
+                    class="nav-link"
+                    type="button"
+                    id="exitButton"
+                >Cerrar sesión</button></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="page-container">
+
+        <section class="welcome-card">
+
+            <div class="welcome-copy">
+
+                <span class="welcome-label">
+                    ● Portal Oficial de Aspirantes Liverpool
+                </span>
+
+                <h1>
+                    Hola,
+                    <span id="candidateFirstName">
+                        Sofía
+                    </span>
+                    
+                </h1>
+
+                <p>
+                    Aquí puedes dar seguimiento en tiempo real al
+                    estatus de tu postulación y conocer con absoluta
+                    claridad tus próximos pasos en El Puerto de Liverpool.
+                </p>
+
+            </div>
+
+            <div class="folio-card">
+
+                <span>
+                    FOLIO DE CANDIDATURA
+                </span>
+
+                <strong id="candidateFolio">
+                    #REQ-2841
+                </strong>
+
+                <small>
+                    <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3M7 17h3"/></svg> Registrado el 20 Ago 2026
+                </small>
+
+            </div>
+
+        </section>
+
+        <section class="job-card">
+
+            <div class="job-header">
+
+                <div>
+
+                    <div class="job-badges">
+
+                        <span class="pill pink-soft" id="jobStatusPill">
+                            En Proceso
+                        </span>
+
+                        <span class="pill green-soft" id="jobStagePill">
+                            ● Etapa 01 · Requisición
+                        </span>
+
+                    </div>
+
+                    <h2 id="jobTitle">
+                        Lead Fullstack Engineer Omnicanal
+                    </h2>
+
+                    <div class="job-metadata">
+
+                        <span>
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg> Torre Liverpool Santa Fe, CDMX
+                            (Esquema Híbrido)
+                        </span>
+
+                        <span>
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg> Jornada Completa Flex
+                        </span>
+
+                        <span>
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="5" rx="1"/><path d="M12 8v5M5 17v-4h14v4"/><rect x="2" y="17" width="6" height="4"/><rect x="16" y="17" width="6" height="4"/></svg> Dirección de Arquitectura & E-commerce
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="primary-small-button"
+                    type="button"
+                    id="nextAppointmentButton"
+                >
+                    <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3M7 17h3"/></svg> Ver Próxima Cita
+                </button>
+
+            </div>
+
+            <div class="job-stats" id="jobStats">
+            </div>
+
+        </section>
+
+        <section class="timeline-card">
+
+            <div class="section-heading timeline-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        TU CAMINO HACIA LIVERPOOL
+                    </span>
+
+                    <h2>
+                        Estatus y Evolución de tu Postulación
+                    </h2>
+
+                </div>
+
+                <span class="last-update" id="lastUpdate">
+                    Sin movimientos registrados
+                </span>
+
+            </div>
+
+            <div class="timeline" id="candidateTimeline">
+            </div>
+
+        </section>
+
+        <section class="content-card" id="offerSection" hidden>
+
+            <div class="card-title-row">
+
+                <div class="title-with-icon">
+
+                    <span class="pink-icon">
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H5v18h14V8ZM14 3v5h5M8 12h8M8 16h8"/></svg>
+                    </span>
+
+                    <div>
+                        <h2>
+                            Tu Oferta Liverpool
+                        </h2>
+
+                        <p id="offerSubtitle">
+                            Revisa la propuesta y confirma tu disponibilidad de ingreso.
+                        </p>
+                    </div>
+
+                </div>
+
+                <span class="confirmed-pill" id="offerPill">
+                    Oferta recibida
+                </span>
+
+            </div>
+
+            <div class="candidate-info-grid" id="offerDetail">
+            </div>
+
+            <div class="recruiter-actions" id="offerActions">
+            </div>
+
+        </section>
+
+        <div class="two-column-layout">
+
+            <section
+                class="content-card"
+                id="interviewSection"
+            >
+
+                <div class="card-title-row">
+
+                    <div class="title-with-icon">
+
+                        <span class="pink-icon">
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3M7 17h3"/></svg>
+                        </span>
+
+                        <div>
+                            <h2>
+                                Tu Próxima Entrevista
+                            </h2>
+
+                            <p>
+                                Sesión remota confirmada por el equipo Liverpool
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <span class="confirmed-pill" id="interviewPill">
+                        Confirmada
+                    </span>
+
+                </div>
+
+                <div class="interview-date-card">
+
+                    <div class="calendar-box">
+
+                        <span id="interviewMonth">
+                            SEP
+                        </span>
+
+                        <strong id="interviewDay">
+                            24
+                        </strong>
+
+                    </div>
+
+                    <div class="interview-time">
+
+                        <strong id="interviewDate">
+                            Jueves, 24 de Septiembre 2026
+                        </strong>
+
+                        <span id="interviewHour">
+                            11:00 AM – 12:15 PM CST (75 minutos)
+                        </span>
+
+                    </div>
+
+                    <span class="teams-label">
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3M7 17h3"/></svg> Microsoft Teams
+                    </span>
+
+                </div>
+
+                <span class="small-section-label">
+                    TU PANEL EVALUADOR
+                </span>
+
+                <div class="evaluators">
+
+                    <article class="evaluator-card">
+
+                        <div class="person-avatar avatar-roberto">
+                            DR
+                        </div>
+
+                        <div>
+                            <strong>
+                                Daniel Ramírez
+                            </strong>
+
+                            <span>
+                                Hiring Manager · Dirección Digital
+                            </span>
+                        </div>
+
+                    </article>
+
+                    <article class="evaluator-card">
+
+                        <div class="person-avatar avatar-mariana">
+                            KM
+                        </div>
+
+                        <div>
+                            <strong>
+                                Karla Méndez
+                            </strong>
+
+                            <span>
+                                Atracción de Talento Liverpool
+                            </span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="interview-bottom">
+
+                    <span>
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3M7 17h3"/></svg> El enlace de Teams se activará
+                        15 minutos antes.
+                    </span>
+
+                    <button
+                        class="disabled-meeting-button"
+                        type="button"
+                        id="joinMeetingButton"
+                    >
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="12" height="12" rx="2"/><path d="m15 10 6-3v10l-6-3"/></svg> Unirme a la Videollamada
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section
+                class="content-card tips-card"
+                id="tipsSection"
+            >
+
+                <div class="card-title-row">
+
+                    <div class="title-with-icon">
+
+                        <span class="green-icon">
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4M8 14a6 6 0 1 1 8 0l-1 2H9Z"/></svg>
+                        </span>
+
+                        <div>
+                            <h2>
+                                Consejos para tu Entrevista
+                            </h2>
+
+                            <p>
+                                Cómo brillar en El Puerto de Liverpool
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tips-list">
+
+                    <article class="tip-item">
+
+                        <span class="tip-number">
+                            1
+                        </span>
+
+                        <div>
+                            <strong>
+                                Estructura tus respuestas (Método STAR)
+                            </strong>
+
+                            <p>
+                                Platícanos la Situación, la Tarea encomendada,
+                                la Acción técnica que lideraste y el Resultado
+                                medible alcanzado.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <article class="tip-item">
+
+                        <span class="tip-number">
+                            2
+                        </span>
+
+                        <div>
+                            <strong>
+                                Enfoque Omnicanal & Centrado en el Cliente
+                            </strong>
+
+                            <p>
+                                En Liverpool conectamos tiendas físicas, apps
+                                y logística nacional. Destaca cómo tus decisiones
+                                de código impactan la experiencia del usuario final.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <article class="tip-item">
+
+                        <span class="tip-number">
+                            3
+                        </span>
+
+                        <div>
+                            <strong>
+                                Haznos preguntas sobre el desafío
+                            </strong>
+
+                            <p>
+                                La entrevista es mutua. Pregunta al Hiring Manager
+                                y al equipo de Talento sobre la visión del área,
+                                el equipo y los retos del puesto.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="tip-footer">
+
+                    <span>
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4M8 14a6 6 0 1 1 8 0l-1 2H9Z"/></svg>
+                    </span>
+
+                    <p>
+                        ¿Deseas una prueba previa de conexión o tienes dudas
+                        de accesibilidad? Tu reclutadora está lista para apoyarte.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="two-column-layout lower-layout">
+
+            <section class="content-card resume-card">
+
+                <div class="card-title-row">
+
+                    <div class="title-with-icon">
+
+                        <span class="gray-icon">
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H5v18h14V8ZM14 3v5h5M8 12h8M8 16h8"/></svg>
+                        </span>
+
+                        <div>
+                            <h2>
+                                Tu Expediente y Currículum
+                            </h2>
+
+                            <p>
+                                Archivos compartidos con el comité evaluador
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="update-cv-button"
+                        type="button"
+                        id="updateCvButton"
+                    >
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H5v18h14V8ZM14 3v5h5M8 12h8M8 16h8"/></svg> Actualizar CV
+                    </button>
+
+                    <input
+                        type="file"
+                        id="cvInput"
+                        accept=".pdf"
+                        hidden
+                    >
+
+                </div>
+
+                <div class="file-row">
+
+                    <span class="file-icon">
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H5v18h14V8ZM14 3v5h5M8 12h8M8 16h8"/></svg>
+                    </span>
+
+                    <div class="file-copy">
+
+                        <strong id="cvFileName">
+                            Sofia_Valdes_Lead_Architect_CV.pdf
+                        </strong>
+
+                        <span>
+                            PDF · 2.4 MB · Cargado el 20 Ago 2026
+                        </span>
+
+                    </div>
+
+                    <div class="file-actions">
+
+                        <button
+                            type="button"
+                            id="previewCvButton"
+                            title="Vista previa"
+                        >
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+
+                        <button
+                            type="button"
+                            id="downloadCvButton"
+                            title="Descargar"
+                        >
+                            <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="candidate-info-grid">
+
+                    <article>
+
+                        <span>
+                            Correo Registrado
+                        </span>
+
+                        <strong id="candidateEmail">
+                            sofia.valdes@techmail.com
+                        </strong>
+
+                    </article>
+
+                    <article>
+
+                        <span>
+                            Teléfono de Contacto
+                        </span>
+
+                        <strong>
+                            +52 55 4920 1823
+                        </strong>
+
+                    </article>
+
+                    <article>
+
+                        <span>
+                            Disponibilidad de Inicio
+                        </span>
+
+                        <strong>
+                            Inmediata / 15 días tras oferta
+                        </strong>
+
+                    </article>
+
+                    <article>
+
+                        <span>
+                            Modalidad Preferida
+                        </span>
+
+                        <strong>
+                            Híbrido (2 días oficina / 3 remoto)
+                        </strong>
+
+                    </article>
+
+                </div>
+
+                <p class="privacy-note">
+                    <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/></svg> Tus datos personales están protegidos conforme
+                    al Aviso de Privacidad de Liverpool.
+                </p>
+
+            </section>
+
+            <section
+                class="content-card recruiter-card"
+                id="recruiterSection"
+            >
+
+                <div class="card-title-row">
+
+                    <div class="title-with-icon">
+
+                        <span class="pink-icon"><svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M18 13a5 5 0 0 1 3 5v3"/></svg>
+                        </span>
+
+                        <div>
+                            <h2>
+                                Tu Reclutadora Asignada
+                            </h2>
+
+                            <p>
+                                Acompañamiento personalizado en cada paso
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="recruiter-profile">
+
+                    <div class="recruiter-avatar">
+                        KM
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Karla Méndez
+                        </strong>
+
+                        <span class="recruiter-role">
+                            Atracción de Talento
+                        </span>
+
+                        <small>
+                            Liverpool Omnicanal & Tech
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <p class="recruiter-message" id="recruiterMessage">
+                </p>
+
+                <div class="recruiter-actions">
+
+                    <button
+                        class="pink-action"
+                        type="button"
+                        id="sendMessageButton"
+                    >
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3h18v14H8l-5 4ZM7 8h10M7 12h7"/></svg> Enviar Mensaje
+                    </button>
+
+                    <button
+                        class="secondary-action"
+                        type="button"
+                        id="questionsButton"
+                    >
+                        <svg class="talento-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 1 1 5 2c-2 1-2 2-2 3M12 17h.01"/></svg> Preguntas Frecuentes
+                    </button>
+
+                </div>
+
+                <div class="response-time">
+
+                    <span>
+                        ● Tiempo de respuesta habitual
+                    </span>
+
+                    <strong>
+                        &lt; 3 horas hábiles
+                    </strong>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="culture-card">
+
+            <div class="culture-content">
+
+                <span class="eyebrow">
+                    CULTURA LIVERPOOL
+                </span>
+
+                <h2>
+                    Transformando la experiencia de millones
+                    de familias mexicanas
+                </h2>
+
+                <p>
+                    Conoce más sobre nuestros centros de desarrollo
+                    tecnológico, beneficios integrales, caja de ahorro,
+                    descuentos departamentales, formación continua y
+                    la vida de los ingenieros en Tech Liverpool.
+                </p>
+
+            </div>
+
+
+            <div class="culture-actions">
+
+                <img
+                    class="culture-image"
+                    src="../recursos/candidato.png"
+                    alt="Candidato Liverpool"
+                >
+
+                <button
+                    type="button"
+                    id="benefitsButton"
+                >
+                    Explorar Beneficios
+
+                    <svg
+                        class="talento-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <path d="M4 12h16m-6-6 6 6-6 6"/>
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <strong>
+                    EDAT
+                </strong>
+
+                <span>
+                    • Portal de Aspirantes y Selección
+                </span>
+            </div>
+
+            <nav>
+
+                <button
+                    type="button"
+                    id="footerFaqButton"
+                >
+                    Preguntas Frecuentes
+                </button>
+
+                <button type="button" id="footerExitButton">
+                    Volver al login
+                </button>
+
+                <button type="button">
+                    Aviso de Privacidad
+                </button>
+
+                <button type="button">
+                    Soporte Técnico
+                </button>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+    <div
+        class="modal-overlay"
+        id="modalOverlay"
+    >
+
+        <div class="modal">
+
+            <button
+                class="modal-close"
+                type="button"
+                id="modalClose"
+            >
+                ×
+            </button>
+
+            <div id="modalContent">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        class="toast"
+        id="toast"
+    >
+    </div>
+
+</body>
+
+</html>
